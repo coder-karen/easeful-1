@@ -1,0 +1,263 @@
+/*
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Forms
+	- Tables
+*/
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 62.5%; /* 10px browser default */
+	font-family:sans-serif;
+}
+
+/* Chrome fix */
+body > div {
+	font-size: $basefontsize;
+	font-size: 2rem;
+}
+
+body {
+	background: #fff;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:400;
+}
+
+
+.button, button {
+	background-color: $turq;
+	border: 1px solid $lightturq;
+	color: $white;
+	cursor:pointer;
+	display:inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	padding:15px 25px;
+	text-decoration:none;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $lightturq;
+		border: 1px solid $white;
+	}
+}
+
+a {
+	color: #007b7d;
+	text-decoration:none;
+}
+
+a:hover {
+	border: 1px dotted lighten($black, 11);
+	color: lighten($black, 11);
+}
+
+blockquote {
+	color: lighten($black, 22);
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 50px;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -5px;
+}
+
+
+pre {
+	background-color: lighten($lightergrey, 5);
+	color: lighten($black, 15);
+	overflow: scroll;
+	padding: 0 20px;
+	white-space: pre;
+}
+
+cite {
+	font-style: italic;
+	font-weight: 700;
+}
+
+/* ## Headings
+--------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headerfont;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4 {
+	font-size: $h4-font-size;
+}
+
+h5 {
+	font-size: $h5-font-size;
+}
+
+h6 {
+	font-size: $h6-font-size;
+}
+
+
+/* ## Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto; /* IE8 */
+}
+
+/* ## Forms
+--------------------------------------------- */
+
+input, textarea {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    color: #545454;
+    font-size: 14px;
+    padding: 16.5px;
+    width: 100%;
+}
+
+[name="submit"] {
+	cursor:pointer;
+}
+
+.search-form {
+	position:relative;
+}
+
+.search-form [type="submit"] {
+	background-color: transparent;
+	background: url(images/search-icon.png) no-repeat 55% 53% #fff;
+	border: 1px solid #d9d9d9;
+	box-shadow:none;
+	height:51px;
+	margin:0;
+	overflow: hidden;
+	padding: 0 42px 0 0;
+	position:absolute;
+	right:0;
+	text-indent:-999px;
+	vertical-align:top;
+	width:50px;
+}
+
+.search-form button {
+	cursor: pointer;
+}
+
+/* ## Tables
+--------------------------------------------- */
+
+table {
+	margin-bottom: 30px;
+	max-width: 100%;
+}
+
+th {
+	text-align: left;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+	padding: 8px;
+	line-height: 1.5;
+	vertical-align: top;
+	border-top: 1px solid lighten($black, 75);
+}
+
+.table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid lighten($black, 75);
+}
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+
+.table > tbody + tbody {
+	border-top: 2px solid lighten($black, 75);
+}
+
+.table .table {
+	background-color: $white;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+	padding: 5px;
+}
+
+.table-bordered {
+	border: 1px solid lighten($black, 75);
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+	border: 1px solid lighten($black, 74);
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+	border-bottom-width: 1px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: lighten($black, 80);
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+	background-color: lighten($black, 80);
+}

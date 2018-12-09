@@ -1,0 +1,83 @@
+/* 
+Theme Name: Easeful
+Theme URI: https://karenattfield.com
+Description: An accessible, extendible site design created for the Genesis Framework.
+Author: Karen Attfield
+Author URI: https://karenattfield.com
+Version: 1.0.0
+Tags: white, one-column, two-columns, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Template: genesis
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* # Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Forms
+	- Tables
+- Common Classes
+	- WordPress
+	- Media Gallery
+	- Genesis
+- Structure and Layout
+	- Site Containers
+	- Sidebar
+	- Column Widths and Positions
+	- Column Classes
+- Site Navigation
+	- Site Navigation
+	- Mobile Menu Toggle
+	- Site Header Navigation
+	- Footer Navigation
+	- Accessible Dropdown Menu
+- Header
+- Content Area
+	- Titles
+	- Entries
+	- Entry Meta
+	- Featured Image
+	- Pagination
+	- Comments
+- Widgets
+	- Home Banner
+	- Home Gallery
+	- Content Strips
+	- Sidebar
+	- Footer Widgets
+	
+- Footer
+*/
+
+
+/* # Table of Contents
+*/
+
+/* Carrie also has 
+
+	- Site Header
+		- Title Area
+		- Widget Area
+
+	- Sidebars
+	- Accessibility Extras
+	- Print Media Query
+*/
+
+@import 'sass/variables';
+@import 'sass/reset';
+@import 'sass/defaults';
+@import 'sass/common-classes';
+@import 'sass/layout';
+@import 'sass/header';
+@import 'sass/navigation';
+@import 'sass/content-area';
+@import 'sass/widgets';
+@import 'sass/main';
+@import 'sass/footer';

@@ -1,0 +1,306 @@
+/*	
+- Widgets
+		- Home Banner
+		- Home Gallery
+		- Content Strips
+		- Sidebar
+		- Footer Widgets
+*/
+
+/* --- Home Banner ------- */
+
+.home-banner {
+	background-color: rgba(#007b7d, 0.3);
+	padding: 40px 0;
+	text-align: center;
+}
+
+.home-banner .widgettitle {
+	color: $white;
+	margin: 0.7em 0;
+	text-transform: none;
+
+	
+}
+
+@media screen and (min-width: 800px) {
+.home-banner .widgettitle {
+		font-size: 80px;
+	}
+	
+}
+
+.home-banner p,
+.home-banner .textwidget {
+	color: lighten($black, 92);
+
+}
+
+@media screen and (min-width: 800px) {
+.home-banner p,
+.home-banner .textwidget  {
+			font-size: 40px;
+		line-height: normal;
+		margin-bottom: 34px;
+	}
+	
+}
+
+
+/* --- Home Gallery ------- */
+
+.home-gallery {
+	background-color: $white;
+	padding: 40px 0 30px;
+}
+
+.home-gallery-1, .home-gallery-2, .home-gallery-3, .home-gallery-4 {
+		text-align: center;
+		width: 100%;
+
+	}
+
+
+@media screen and (min-width: 810px) {
+	.home-gallery-1, .home-gallery-2, .home-gallery-3, .home-gallery-4 {
+		float: left;
+		width: 50%;
+
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.home-gallery-1, .home-gallery-2, .home-gallery-3, .home-gallery-4 {
+		float: left;
+		width: 25%;
+
+	}
+}
+
+/* --- Content Strip Widgets ----- */
+
+.content-strip {
+	background: $lightturq;
+	padding: 40px 0;
+	text-align:center;
+}
+
+.content-strip-2 a {
+	color: $white;
+}
+
+.content-strip-2 .widget_media_image, .content-strip .widget_media_image {
+	text-align: center;
+}
+
+
+.content-strip .widget-title, .content-strip-2 .widget-title {
+	text-align: center;
+}
+
+.content-strip .featured-content .entry,  .content-strip-2 .featured-content .entry {
+	background: transparent;
+	margin-bottom: 0;
+
+	.alignleft,  .alignright  {
+		float: none;
+		display:block;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	
+
+	.aligncenter {
+		text-align: center;
+	}
+
+	.entry-header {
+	
+
+		.entry-title {
+			margin-bottom: 20px;
+		}
+
+		.entry-meta {
+			background-color: transparent;
+			color: $white;
+				margin: 0 -40px 0px;
+		padding: 0 60px 0;
+		}
+	}
+
+	.avatar {
+	margin-right: 1em;
+	}
+
+
+
+	.alignright .avatar {
+		margin-right: 0;
+		margin-left: 0;
+		float: none;
+	}
+
+	.alignleft .avatar {
+		margin-right: 0;
+		margin-left: 0;
+		float:none;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.content-strip .featured-content .entry,  .content-strip-2 .featured-content .entry {
+
+		.alignleft  {
+		float: left;
+
+		}
+
+		.alignright {
+		float:right;
+		}
+		
+		.alignleft .entry-image {
+			margin-right: 1em;
+		}
+
+		.alignright .entry-image {
+			margin-left: 1em;
+		}
+
+		.alignright .avatar {
+			margin-right:0;
+			float:right;
+			margin-left: 20px;
+		}
+
+		.alignleft .avatar {
+			margin-left: 0;
+			float: left;
+			margin-right: 20px;
+		}
+
+
+	}
+
+
+	
+}
+
+@media screen and (min-width: 1023px) {
+	.content-strip {
+	text-align: left;
+	}
+}
+
+.content-strip-2 {
+	background-color: rgba(#007b7d, 0.4);
+	color: $white;
+	padding: 40px 0;
+	text-align:center;
+}
+
+@media screen and (min-width: 1023px) {
+	.content-strip-2 {
+	text-align: left;
+	}
+}
+
+/* ----- Sidebar ----- */
+
+.sidebar .featured-content .entry {
+
+	.entry-meta {
+	background-color: transparent;
+	}
+	
+	.avatar {
+		display:block;
+	float:none;
+	margin: 1em 0;
+	}
+
+	.alignright .avatar {
+		float: right;
+		margin-left: 1em;
+	}
+
+	.entry-title {
+		margin-bottom: 5px;
+	}
+
+	.alignleft, .alignright {
+	float:none;
+
+	}
+
+	.aligncenter {
+		text-align:center;
+	}
+	}
+
+@media screen and (min-width: 1023px) {
+.sidebar .featured-content .entry {
+	.avatar {
+	display:block;
+	margin: 1em 0;
+	float:none;
+	}
+
+	.alignleft .avatar {
+		float:left;
+		margin-right: 1em;
+	}
+
+
+}
+}
+
+
+/* --- Footer Widgets ------- */
+
+.footer-widget-area {
+	text-align:center;
+
+	a {
+		color: $lightturq;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			color: $white;
+		}
+	}
+}
+
+.footer-widget-area #wp-calendar {
+	margin: 0 auto;
+}
+
+.footer-widgets .wrap::before {
+	content: none;
+}
+
+.footer-widgets .wrap {
+	margin-bottom: 20px;
+}
+
+.footer-widgets {
+	background: $turq; //#009092;
+	color: $white;
+}
+
+.footer-widget-area {
+	ul {
+		list-style-type:none;
+		padding-left:0;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.footer-widgets .wrap {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap:20px;
+	}
+}

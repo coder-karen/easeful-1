@@ -1,0 +1,107 @@
+/*
+- Structure and Layout
+	- Site Containers
+	- Content & Pimary Sidebar
+	- Sidebar
+	- Positions
+*/
+/* Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------------- */
+
+.wrap {
+	margin: 0 auto;
+	padding: 0 5%;
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+.site-inner {
+	background-color:$white;
+	padding-top: 30px;
+}
+
+
+/* Content & Primary Sidebar
+--------------------------------------------- */
+
+@media screen and (min-width: 1023px) {
+	.content {
+		float:left;
+	}
+
+	.content-sidebar .content {
+		display:block;
+		float:left;
+		width: 66%;
+	}
+
+	.sidebar-content .content {
+		display:block;
+		float:right;
+		width: 66%;
+	}
+
+
+	.content-sidebar .sidebar-primary {
+		display:block;
+		float:left;
+		width:30%;
+	}
+
+		.sidebar-content .sidebar-primary {
+		display:block;
+		float:right;
+		width:30%;
+	}
+}
+
+
+/*
+Sidebar
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: $basefontsize;
+}
+
+.sidebar p:last-child,
+.sidebar ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.sidebar .widget {
+	background: $white;
+	margin-bottom: 20px;
+	padding: 0 40px 40px 40px;
+}
+
+.sidebar .widget-wrap {
+	margin-left: 4px;
+}
+
+.sidebar .search-form input[type="search"] {
+	width: 100%;
+}
+
+
+
+/* Positions
+--------------------------------------------- */
+
+.full-width-content .content {
+	float: none;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	width: 100%;
+}
+
+

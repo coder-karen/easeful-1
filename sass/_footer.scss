@@ -1,0 +1,25 @@
+/* 
+- Footer
+*/
+/* Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: $navfootercolor;
+	color: $white;
+	font-size: 16px;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.site-footer a {
+	color: $white;
+}
+
+.site-footer a:hover {
+	border-bottom: 0;
+}
+
+.site-footer p {
+	margin: 0;
+}
